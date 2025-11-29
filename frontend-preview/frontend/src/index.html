@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>AGE - Protótipo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body { font-family: Inter, Roboto, Arial, sans-serif; margin:0; background:#f7f8fa; color:#0f1724; }
+      .app { max-width:1200px; margin:24px auto; padding:20px; }
+      header { display:flex; align-items:center; gap:20px; margin-bottom:24px; }
+      header img { height:64px; }
+      .grid { display:grid; grid-template-columns: 1fr 1fr; gap:16px; }
+      .card { background:white; border-radius:8px; padding:16px; box-shadow:0 1px 4px rgba(0,0,0,0.06); }
+      img.preview { width:100%; height:auto; border-radius:6px; }
+      pre { background:#111827; color:#e6eef8; padding:12px; overflow:auto; border-radius:6px; }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <img src="../fig-assets/login.png" alt="AGE logo preview" />
+        <h1>AGE — Protótipo de Alta Fidelidade</h1>
+      </header>
+
+      <section class="grid">
+        <div class="card">
+          <h2>Telas (Login)</h2>
+          <img class="preview" src="../fig-assets/login.png" alt="login" />
+        </div>
+        <div class="card">
+          <h2>Telas (Dashboard)</h2>
+          <img class="preview" src="../fig-assets/dashboard.png" alt="dashboard" />
+        </div>
+        <div class="card">
+          <h2>Telas (Overview)</h2>
+          <img class="preview" src="../fig-assets/overview.png" alt="overview" />
+        </div>
+        <div class="card">
+          <h2>Como usar</h2>
+          <p>Instale dependências e rode o protótipo:</p>
+          <pre>npm install
+npm run start</pre>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
